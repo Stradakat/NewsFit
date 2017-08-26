@@ -8,11 +8,11 @@ $.getJSON('/articles', function(data) {
 });
 
 
-// whenever someone clicks a p tag
+// a p tag click creates article
 $(document).on('click', 'p', function(){
-  // empty the notes from the note section
+  // empty notes from the note section
   //$('#notes').empty();
-  // save the id from the p tag
+  // save the p tag id 
   var thisId = $(this).attr('data-id');
 
   // now make an ajax call for the Article

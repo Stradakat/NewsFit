@@ -15,11 +15,10 @@ var NoteSchema = new Schema({
   }
 });
 
-// Remember, Mongoose will automatically save the ObjectIds of the notes.
-// These ids are referred to in the Article model.
+// Mongoose will automatically save the ObjectIds.
 
-// create the Note model with the NoteSchema
+// create Note model w/NoteSchema
 var Note = mongoose.model('Note', NoteSchema);
 
-// export the Note model
+// export Note model
 module.exports = Note;
